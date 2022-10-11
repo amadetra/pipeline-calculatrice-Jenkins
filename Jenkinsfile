@@ -48,7 +48,7 @@ pipeline {
         stage('Branch') {
                 agent any
                 steps {
-                        sh "echo `git branch --show-current`"
+                        'echo nom-de-la-branche'
                 }
         }
     }
