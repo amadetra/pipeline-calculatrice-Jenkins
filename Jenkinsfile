@@ -46,7 +46,7 @@ pipeline {
             }
         }
         stage('Branch') {
-                agent none
+                agent any
                 steps {
                         sh "echo `git branch --show-current`"
                 }
