@@ -45,5 +45,11 @@ pipeline {
                 }
             }
         }
+	stage('Branch') {
+		agent none
+		steps {
+			sh "echo `git branch --show-current`" 
+		}
+	}
     }
 }
